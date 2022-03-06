@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Login + Signup form </title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Signup with login form</title>
+    <link rel="stylesheet" href="login_signup.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="form-modal">
+    
+    <div class="form-toggle">
+        <button id="login-toggle" onclick="toggleLogin()">log in</button>
+        <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+    </div>
+
+    <div id="login-form">
+        <form name='form-login'>
+            <input type="text" id="userName" placeholder="Enter email or username" required/>
+            <input type="password" id= "userPw" placeholder="Enter password" required/>
+            <input type="submit" id="login_btn" class="btn login" value="Login" onclick="check()">
+            <hr/>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> login with google</button>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-github fa-lg" aria-hidden="true"></i> login with Github</button>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> login with facebook</button>
+        </form>
+    </div>
+
+    <div id="signup-form">
+        <form name='form-login'>
+            <input type="email" id="name" placeholder="Enter your email"/>
+            <input type="password" id= "pw" placeholder="Create password"/>
+            <input id="rgstr_btn" type="submit" value="Register" onclick="store()">
+            <hr/>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign up with google</button>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-github fa-lg" aria-hidden="true"></i> sign up with Github</button>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> sign up with facebook</button>
+        </form>
+    </div>
+
+</div>
+<!-- partial -->
+  <script  src="login_signup.js"></script>
+  <script src="function_login.js"></script>
+
+</body>
+</html>
